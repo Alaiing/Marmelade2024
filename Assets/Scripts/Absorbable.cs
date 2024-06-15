@@ -64,13 +64,14 @@ public class Absorbable : MonoBehaviour
         _spriteRenderer.sprite = _data.sprite;
     }
 
-    public void MoveBy(Vector2 moveVector, float duration)
+    public void MoveBy(Vector2 moveVector, float duration, float delay)
     {
-        StartCoroutine(MoveTo(moveVector, duration));
+        StartCoroutine(MoveTo(moveVector, duration, delay));
     }
 
-    IEnumerator MoveTo(Vector2 moveVector, float duration)
+    IEnumerator MoveTo(Vector2 moveVector, float duration, float delay)
     {
+        yield return new WaitForSeconds(delay);
         float timer = 0;
         Vector2 startPosition = transform.position;
         Vector2 endPosition = (Vector2)transform.position + moveVector;

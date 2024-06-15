@@ -31,6 +31,11 @@ public class Star : MonoBehaviour
 
     private Transform _transform;
 
+    [SerializeField]
+    private float _moveDuration = 0.2f;
+    [SerializeField]
+    private float _moveDelay = 0.1f;
+
     [ShowInInspector]
     [ReadOnly]
     private int[] _absorbedTags;
@@ -78,7 +83,7 @@ public class Star : MonoBehaviour
         foreach(Absorbable absorbable in Absorbable.Absorbables)
         {
             Vector3 attractionDistance = (_transform.position - absorbable.transform.position).normalized * Mathf.Lerp(GameData.DATA.MinAttractionDistance, GameData.DATA.MaxAttractionDistance, absorbable.AttractionAmount) * CurrentData.Gravity;
-            absorbable.MoveBy(attractionDistance, 0.2f);
+            absorbable.MoveBy(attractionDistance, _moveDuration, _moveDelay);
         }
     }
 
