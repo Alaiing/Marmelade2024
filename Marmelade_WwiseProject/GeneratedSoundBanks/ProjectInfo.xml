@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="Marmelade_WwiseProject" GUID="{FBD4BB61-230C-49C5-BD8F-380B156ACA1B}" Generator="2023.1.4.8496"/>
+	<CacheRoot>../.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{B5A12D06-C6C1-4FDC-8523-55B29BCD2207}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="Mac"/>
+		<Platform Name="Windows" GUID="{869A2530-B118-4364-98F4-364B610C0BF6}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{1EDD4AE4-6816-4B24-8FD8-B4ED172D1600}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{9B1BFAF5-B88B-2BAC-C0B5-210EA327E271}</FileHash>
+</ProjectInfo>
