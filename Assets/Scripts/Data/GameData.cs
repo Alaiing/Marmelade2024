@@ -33,5 +33,6 @@ public class GameData : ScriptableObject
     public float MinAttractionDistance;
     public float MaxAttractionDistance;
 
+    public string[] objectTags;
     public ObjectData[] objects;
 }

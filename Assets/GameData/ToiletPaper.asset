@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652c194db6b500a4d874b033e7238bdf, type: 3}
   m_Name: ToiletPaper
   m_EditorClassIdentifier: 
+  tag: 2
   AborbAmount: 1
   AttractionRate: 0
   sprite: {fileID: 21300000, guid: c4fde951e1e166047b4a41051113d5c7, type: 3}

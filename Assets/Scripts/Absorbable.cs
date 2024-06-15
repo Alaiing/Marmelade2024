@@ -9,8 +9,10 @@ public class Absorbable : MonoBehaviour
     public static List<Absorbable> Absorbables = new();
 
     [SerializeField]
+    [OnValueChanged(nameof(OnDataChanged))]
     private ObjectData _data;
     public float AttractionAmount => _data.AttractionRate;
+    public int ObjectTag => _data.tag;
     [SerializeField]
     private AnimationCurve _moveCurve;
 
@@ -19,6 +21,7 @@ public class Absorbable : MonoBehaviour
     public int AbsorptionAmount => _data.AborbAmount;
 
     private Rigidbody2D _body;
+    private Camera _camera;
 
     private void Awake()
     {
@@ -26,6 +29,11 @@ public class Absorbable : MonoBehaviour
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         if (_data != null)
             _spriteRenderer.sprite = _data.sprite;
+    }
+
+    private void Start()
+    {
+        _camera = Camera.main;
     }
 
     private void OnEnable()
@@ -38,11 +46,24 @@ public class Absorbable : MonoBehaviour
         Absorbables.Remove(this);
     }
 
+    private void Update()
+    {
+        Vector2 relativePosition = _camera.transform.position - transform.position;
+        _spriteRenderer.transform.up = -relativePosition.normalized;
+        _spriteRenderer.transform.localScale = new Vector3(1f,Mathf.Lerp(1,1.5f, relativePosition.magnitude / 50),1f);
+    }
+
     public void SetData(ObjectData data)
     {
         _data = data;
+        UpdateData();
+    }
+
+    private void UpdateData()
+    {
         _spriteRenderer.sprite = _data.sprite;
     }
+
     public void MoveBy(Vector2 moveVector, float duration)
     {
         StartCoroutine(MoveTo(moveVector, duration));
@@ -62,4 +83,12 @@ public class Absorbable : MonoBehaviour
 
         _body.MovePosition(endPosition);
     }
+
+#if UNITY_EDITOR
+    private void OnDataChanged()
+    {
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        UpdateData();
+    }
+#endif
 }

@@ -27,5 +27,11 @@ MonoBehaviour:
     PulsationPeriod: 60
   MinAttractionDistance: 1
   MaxAttractionDistance: 4
+  objectTags:
+  - White
+  - Black
+  - Pink
+  - Rainbow
   objects:
+  - {fileID: 11400000, guid: 9259b38cf59a4a84cb317142ad3b8cb0, type: 2}
   - {fileID: 11400000, guid: b8dc083151186e54391ae51c72d04ce0, type: 2}
