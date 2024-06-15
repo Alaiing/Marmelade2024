@@ -21,19 +21,12 @@ public class Absorbable : MonoBehaviour
     public int AbsorptionAmount => _data.AborbAmount;
 
     private Rigidbody2D _body;
-    private Camera _camera;
 
     private void Awake()
     {
         _body = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        if (_data != null)
-            _spriteRenderer.sprite = _data.sprite;
-    }
-
-    private void Start()
-    {
-        _camera = Camera.main;
+        UpdateData();
     }
 
     private void OnEnable()
@@ -46,13 +39,6 @@ public class Absorbable : MonoBehaviour
         Absorbables.Remove(this);
     }
 
-    private void Update()
-    {
-        Vector2 relativePosition = _camera.transform.position - transform.position;
-        _spriteRenderer.transform.up = -relativePosition.normalized;
-        _spriteRenderer.transform.localScale = new Vector3(1f,Mathf.Lerp(1,1.5f, relativePosition.magnitude / 50),1f);
-    }
-
     public void SetData(ObjectData data)
     {
         _data = data;
@@ -61,6 +47,9 @@ public class Absorbable : MonoBehaviour
 
     private void UpdateData()
     {
+        if (_data == null || _data.sprite == null)
+            return;
+
         _spriteRenderer.sprite = _data.sprite;
     }
 
@@ -88,8 +77,18 @@ public class Absorbable : MonoBehaviour
 #if UNITY_EDITOR
     private void OnDataChanged()
     {
+        if (_data == null || _data.sprite == null)
+            return;
+
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        PolygonCollider2D collider = GetComponentInChildren<PolygonCollider2D>();
         UpdateData();
+        List<Vector2> points = new();
+        _spriteRenderer.sprite.GetPhysicsShape(0, points);
+        collider.points = points.ToArray();
+        name = _data.name;
+        UnityEditor.PrefabUtility.RecordPrefabInstancePropertyModifications(this);
+        UnityEditor.PrefabUtility.RecordPrefabInstancePropertyModifications(collider);
     }
 #endif
 }

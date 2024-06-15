@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CircleCollider2D))]
@@ -58,7 +59,8 @@ public class Star : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.TryGetComponent(out Absorbable absorbable))
+        Absorbable absorbable = collision.collider.GetComponentInParent<Absorbable>();
+        if (absorbable != null)
         {
             AbsorbObject(absorbable);
             Destroy(absorbable.gameObject);
@@ -78,8 +80,7 @@ public class Star : MonoBehaviour
     [Button]
     private void Pulsate()
     {
-        _tweenAnimation.DORewind();
-        _tweenAnimation.DOPlay();
+        Bump();
         foreach(Absorbable absorbable in Absorbable.Absorbables)
         {
             Vector3 attractionDistance = (_transform.position - absorbable.transform.position).normalized * Mathf.Lerp(GameData.DATA.MinAttractionDistance, GameData.DATA.MaxAttractionDistance, absorbable.AttractionAmount) * CurrentData.Gravity;
@@ -87,10 +88,17 @@ public class Star : MonoBehaviour
         }
     }
 
+    private void Bump()
+    {
+        _tweenAnimation.DORewind();
+        _tweenAnimation.DOPlay();
+    }
+
     public void AbsorbObject(Absorbable absorbable)
     {
         _absorbedAmount += absorbable.AbsorptionAmount;
         _absorbedTags[absorbable.ObjectTag]++;
+        Bump();
         if (_absorbedAmount > CurrentData.Threshold)
         {
             _currentStarDataIndex++;

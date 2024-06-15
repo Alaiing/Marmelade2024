@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TreeEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -33,7 +34,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = moveSpeed * moveVector;
-        if(rb.velocity != Vector2.zero) transform.up = -rb.velocity.normalized;
+        if (rb.velocity != Vector2.zero)
+        {
+            transform.rotation = Quaternion.AngleAxis(Vector3.SignedAngle(Vector3.down, rb.velocity, new Vector3(0, 0, 1)), new Vector3(0, 0, 1));
+        }
     }
 
 
