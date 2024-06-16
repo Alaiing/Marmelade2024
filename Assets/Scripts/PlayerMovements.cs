@@ -14,10 +14,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Transform grabTransform;
 
+    private Animator _animator;
+
     private void Awake()
     {  
         foxyWhiteTrack = new PlayerActions();
         rb = GetComponent<Rigidbody2D>();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     private void OnEnable()
@@ -44,6 +47,9 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.rotation = Quaternion.AngleAxis(Vector3.SignedAngle(Vector3.down, rb.velocity, new Vector3(0, 0, 1)), new Vector3(0, 0, 1));
         }
+        _animator.SetBool("Run", rb.velocity != Vector2.zero);
+
+
     }
 
     private void OnMovementPerformed(InputAction.CallbackContext value)
