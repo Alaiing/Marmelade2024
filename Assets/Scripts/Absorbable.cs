@@ -26,10 +26,17 @@ public class Absorbable : MonoBehaviour
     [SerializeField]
     private DOTweenAnimation _highlightAnimation;
 
+    private Collider2D _collider;
+    public Collider2D Collider => _collider;
+
+    private TrailRenderer _trailRenderer;
+
     private void Awake()
     {
         _body = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        _collider = _spriteRenderer.GetComponent<Collider2D>();
+        _trailRenderer = GetComponentInChildren<TrailRenderer>();
         UpdateData();
     }
 
@@ -90,6 +97,27 @@ public class Absorbable : MonoBehaviour
             _highlightAnimation.DOPause();
             _highlightAnimation.DORewind();
         }
+    }
+
+    public void OnGrabbed()
+    {
+        Highlight(false);
+        _trailRenderer.enabled = false;
+        enabled = false;
+        Body.isKinematic = true;
+        Body.velocity = Vector2.zero;
+        Body.angularVelocity = 0f;
+        GetComponent<FaceCamera>().enabled = false;
+        Collider.gameObject.layer = LayerMask.NameToLayer("Grabbed");
+    }
+
+    public void OnReleased()
+    {
+        Body.isKinematic = false;
+        enabled = true;
+        _trailRenderer.enabled = true;
+        GetComponent<FaceCamera>().enabled = true;
+        Collider.gameObject.layer = LayerMask.NameToLayer("Object");
     }
 
 #if UNITY_EDITOR

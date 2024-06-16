@@ -78,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
         if (absorbable != null && _closeAbsorbables.Contains(absorbable))
         {
             _closeAbsorbables.Remove(absorbable);
+            absorbable.Highlight(false);
         }
         SortAbsorbables();
     }
@@ -114,12 +115,7 @@ public class PlayerMovement : MonoBehaviour
     private void GrabAbsorbable(Absorbable absorbable)
     {
         _grabbedAbsorbable = absorbable;
-        _grabbedAbsorbable.Highlight(false);
-        _grabbedAbsorbable.enabled = false;
-        _grabbedAbsorbable.Body.isKinematic = true;
-        _grabbedAbsorbable.Body.velocity = Vector2.zero;
-        _grabbedAbsorbable.Body.angularVelocity = 0f;
-        _grabbedAbsorbable.GetComponent<FaceCamera>().enabled = false;
+        _grabbedAbsorbable.OnGrabbed();
         _grabbedAbsorbable.transform.SetParent(grabTransform, worldPositionStays:true);
         _grabbedAbsorbable.transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.AngleAxis(180, new Vector3(0,0,1)));
     }
@@ -127,10 +123,8 @@ public class PlayerMovement : MonoBehaviour
     private void ThrowAbsorbable()
     {
         _grabbedAbsorbable.transform.SetParent(null, worldPositionStays: true);
-        _grabbedAbsorbable.Body.isKinematic = false;
+        _grabbedAbsorbable.OnReleased();
         _grabbedAbsorbable.Body.AddForce(-transform.up * 10, ForceMode2D.Impulse);
-        _grabbedAbsorbable.enabled = true;
-        _grabbedAbsorbable.GetComponent<FaceCamera>().enabled = true;
         _grabbedAbsorbable = null;
     }
     #endregion
