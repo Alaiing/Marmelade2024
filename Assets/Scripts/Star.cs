@@ -1,11 +1,6 @@
 using DG.Tweening;
 using Sirenix.OdinInspector;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CircleCollider2D))]

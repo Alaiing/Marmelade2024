@@ -9,7 +9,7 @@ public class Absorbable : MonoBehaviour
     public static List<Absorbable> Absorbables = new();
 
     [SerializeField]
-    [OnValueChanged(nameof(OnDataChanged))]
+    [OnValueChanged("OnDataChanged")]
     private ObjectData _data;
     public float AttractionAmount => _data.AttractionRate;
     public int ObjectTag => _data.tag;
