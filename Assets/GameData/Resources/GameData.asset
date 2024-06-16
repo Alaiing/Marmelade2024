@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: GameData
   m_EditorClassIdentifier: 
   StarDatas:
-  - Threshold: 50
+  - Threshold: 25
     Gravity: 1
     PulsationPeriod: 5
-  - Threshold: 100
+  - Threshold: 50
     Gravity: 2
     PulsationPeriod: 10
-  - Threshold: 200
+  - Threshold: 75
     Gravity: 3
     PulsationPeriod: 40
-  - Threshold: 300
+  - Threshold: 100
     Gravity: 4
     PulsationPeriod: 60
   MinAttractionDistance: 0.1
@@ -30,8 +30,9 @@ MonoBehaviour:
   objectTags:
   - White
   - Black
-  - Pink
-  - Rainbow
+  - Violet
+  - Green
   objects:
+  - {fileID: 11400000, guid: 62d2dff782533c247a55f99ff073702c, type: 2}
   - {fileID: 11400000, guid: 9259b38cf59a4a84cb317142ad3b8cb0, type: 2}
   - {fileID: 11400000, guid: b8dc083151186e54391ae51c72d04ce0, type: 2}

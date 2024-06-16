@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 652c194db6b500a4d874b033e7238bdf, type: 3}
-  m_Name: Fridge
+  m_Name: Underware
   m_EditorClassIdentifier: 
-  tag: 2
-  AbsorbAmount: 3
-  AttractionRate: 0.25
-  sprite: {fileID: 21300000, guid: d16ad7f1ffd27054d8b0bf658fe355cc, type: 3}
+  tag: 0
+  AbsorbAmount: 2
+  AttractionRate: 0.6
+  sprite: {fileID: 21300000, guid: b23bd1e3fc6f2e540b9438b2a34937c4, type: 3}
