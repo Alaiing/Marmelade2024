@@ -491,10 +491,22 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b27a0de7ef208f648b1f4f86c38d877e, type: 2}
+  _ZBOUI:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7642b055d44c29347b1bf6f2de33516f, type: 2}
   _phaseChangeSound:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b1530b1d439fe2f4b865f7d01104286d, type: 2}
+  _explodeSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ffba98d0c19ae71499cb1c2af25c2d91, type: 2}
+  _ZBOUII:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!58 &3485599420814725605
 CircleCollider2D:
   m_ObjectHideFlags: 0

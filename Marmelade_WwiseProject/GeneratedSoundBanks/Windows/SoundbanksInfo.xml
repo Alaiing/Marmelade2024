@@ -22,58 +22,83 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{269AB563-7ECE-7F80-0685-BC54ADF13FFE}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A7FF4DA9-4860-C7D4-EFA9-7969BFA5FE68}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
-				<File Id="185082679" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>zboui.wav</ShortName>
-					<CachePath>SFX/zboui_818F3B66.wem</CachePath>
+				<File Id="104768258" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Star_voice3.wav</ShortName>
+					<CachePath>SFX/Star_voice3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="110966647" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_throw.wav</ShortName>
+					<CachePath>SFX/Player_throw_818F3B66.wem</CachePath>
+				</File>
+				<File Id="216942229" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Star_powerup.wav</ShortName>
+					<CachePath>SFX/Star_powerup_818F3B66.wem</CachePath>
+				</File>
+				<File Id="369244996" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Star_finalState.wav</ShortName>
+					<CachePath>SFX/Star_finalState_818F3B66.wem</CachePath>
 				</File>
 				<File Id="385189998" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Marmeloche_ingame.wav</ShortName>
 					<CachePath>SFX/Marmeloche_ingame_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="901543470" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>plouf.wav</ShortName>
-					<CachePath>SFX/plouf_818F3B66.wem</CachePath>
+				<File Id="742054524" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_grab.wav</ShortName>
+					<CachePath>SFX/Player_grab_818F3B66.wem</CachePath>
+				</File>
+				<File Id="767209418" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Star_voice2.wav</ShortName>
+					<CachePath>SFX/Star_voice2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="847107667" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Push.wav</ShortName>
+					<CachePath>SFX/Player_Push_818F3B66.wem</CachePath>
+				</File>
+				<File Id="920857057" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Star_aspire.wav</ShortName>
+					<CachePath>SFX/Star_aspire_818F3B66.wem</CachePath>
+				</File>
+				<File Id="926043019" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Star_voice1.wav</ShortName>
+					<CachePath>SFX/Star_voice1_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1971208426" Name="PlayerBump" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+				<Event Id="1971208426" Name="PlayerBump" DurationType="OneShot" DurationMin="1.0710204" DurationMax="1.0710204">
 					<MediaRefs>
-						<MediaRef Id="185082679"/>
-						<MediaRef Id="901543470"/>
+						<MediaRef Id="847107667"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="294632988" Name="PlayerGrab" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+				<Event Id="294632988" Name="PlayerGrab" DurationType="OneShot" DurationMin="0.73142856" DurationMax="0.73142856">
 					<MediaRefs>
-						<MediaRef Id="185082679"/>
-						<MediaRef Id="901543470"/>
+						<MediaRef Id="742054524"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1227140570" Name="PlayerThrow" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+				<Event Id="1227140570" Name="PlayerThrow" DurationType="OneShot" DurationMin="1.0187755" DurationMax="1.0187755">
 					<MediaRefs>
-						<MediaRef Id="185082679"/>
-						<MediaRef Id="901543470"/>
+						<MediaRef Id="110966647"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1348050238" Name="StarAbsorb" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+				<Event Id="1348050238" Name="StarAbsorb" DurationType="OneShot" DurationMin="0.5485714" DurationMax="0.5485714">
 					<MediaRefs>
-						<MediaRef Id="185082679"/>
-						<MediaRef Id="901543470"/>
+						<MediaRef Id="920857057"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="698939420" Name="StarExplode" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+				<Event Id="698939420" Name="StarExplode" DurationType="OneShot" DurationMin="5.4857144" DurationMax="5.4857144">
 					<MediaRefs>
-						<MediaRef Id="185082679"/>
-						<MediaRef Id="901543470"/>
+						<MediaRef Id="369244996"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1418403486" Name="StarPhaseChange" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+				<Event Id="1418403486" Name="StarPhaseChange" DurationType="OneShot" DurationMin="3.1869388" DurationMax="3.1869388">
 					<MediaRefs>
-						<MediaRef Id="185082679"/>
-						<MediaRef Id="901543470"/>
+						<MediaRef Id="104768258"/>
+						<MediaRef Id="216942229"/>
+						<MediaRef Id="767209418"/>
+						<MediaRef Id="926043019"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="585387800" Name="StartMusique" DurationType="Infinite">
@@ -84,5 +109,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{25ABF295-82E6-4DA1-E988-A92351585F1A}</FileHash>
+	<FileHash>{35EDA532-1D29-D82B-2937-A41BD314FE6B}</FileHash>
 </SoundBanksInfo>

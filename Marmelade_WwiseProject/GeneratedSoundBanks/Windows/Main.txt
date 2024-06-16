@@ -8,7 +8,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	1971208426	PlayerBump			\Default Work Unit\PlayerBump	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	185082679	zboui	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\zboui_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestSound\zboui		81192
+	104768258	Star_voice3	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Star_voice3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\StarSpeak\Star_voice3		262752
+	110966647	Player_throw	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Player_throw_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_throw		179808
+	216942229	Star_powerup	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Star_powerup_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Star_powerup		562272
+	369244996	Star_finalState	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Star_finalState_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Star_finalState		967776
 	385189998	Marmeloche_ingame	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Marmeloche_ingame_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main\Marmeloche_ingame		4233696
-	901543470	plouf	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\plouf_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestSound\plouf		54368
+	742054524	Player_grab	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Player_grab_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_grab		129120
+	767209418	Star_voice2	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Star_voice2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\StarSpeak\Star_voice2		364128
+	847107667	Player_Push	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Player_Push_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Push		189024
+	920857057	Star_aspire	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Star_aspire_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Star_aspire		96864
+	926043019	Star_voice1	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Star_voice1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\StarSpeak\Star_voice1		391776
 

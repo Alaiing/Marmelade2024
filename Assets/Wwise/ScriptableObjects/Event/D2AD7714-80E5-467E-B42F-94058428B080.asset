@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47dcbdf0952dce4bbecf9848b5e8327, type: 3}
+  m_Name: D2AD7714-80E5-467E-B42F-94058428B080
+  m_EditorClassIdentifier: 
+  objectName: StarExplode
+  id: 698939420
+  guid: D2AD7714-80E5-467E-B42F-94058428B080

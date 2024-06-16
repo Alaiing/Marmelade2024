@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: af8fe0767ae2544c848daf9b16496a8e
     GuidInternal: 
-    m_lastTime: -8584830590262901126
+    m_lastTime: -8584830558390340291
     List:
     - name: Main
       guid: d16d360327c730469bafaf5174a5ce21
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fcbef31f0a119040baf7307d1af4d464
     GuidInternal: 
-    m_lastTime: -8584830590399696878
+    m_lastTime: -8584830554196669757
     List:
+    - name: PlayerAbsorbed
+      guid: ca4cc03d7eb31f43a54aeec4d3b4cc36
+      id: 341220890
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fcbef31f0a119040baf7307d1af4d464
+      - ElementName: PlayerAbsorbed
+        ObjectType: 3
+        guid: ca4cc03d7eb31f43a54aeec4d3b4cc36
+      Path: Events\Default Work Unit\PlayerAbsorbed
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PlayerBump
       guid: 8bf1052ca5b3ec408061254949ba46f3
       id: 1971208426
@@ -111,8 +128,8 @@ MonoBehaviour:
         guid: 8bf1052ca5b3ec408061254949ba46f3
       Path: Events\Default Work Unit\PlayerBump
       maxAttenuation: 0
-      maxDuration: 0.91945577
-      minDuration: 0.6153288
+      maxDuration: 1.0710204
+      minDuration: 1.0710204
     - name: PlayerGrab
       guid: 6c7ff9d919a67742a2664226b4a33251
       id: 294632988
@@ -128,8 +145,8 @@ MonoBehaviour:
         guid: 6c7ff9d919a67742a2664226b4a33251
       Path: Events\Default Work Unit\PlayerGrab
       maxAttenuation: 0
-      maxDuration: 0.91945577
-      minDuration: 0.6153288
+      maxDuration: 0.73142856
+      minDuration: 0.73142856
     - name: PlayerThrow
       guid: b3015da6d1f4c74891f16e95422660f4
       id: 1227140570
@@ -145,8 +162,8 @@ MonoBehaviour:
         guid: b3015da6d1f4c74891f16e95422660f4
       Path: Events\Default Work Unit\PlayerThrow
       maxAttenuation: 0
-      maxDuration: 0.91945577
-      minDuration: 0.6153288
+      maxDuration: 1.0187755
+      minDuration: 1.0187755
     - name: StarAbsorb
       guid: 0e338dba39a6e04f885316c395617973
       id: 1348050238
@@ -162,8 +179,8 @@ MonoBehaviour:
         guid: 0e338dba39a6e04f885316c395617973
       Path: Events\Default Work Unit\StarAbsorb
       maxAttenuation: 0
-      maxDuration: 0.91945577
-      minDuration: 0.6153288
+      maxDuration: 0.5485714
+      minDuration: 0.5485714
     - name: StarExplode
       guid: 1477add2e5807e46b42f94058428b080
       id: 698939420
@@ -179,8 +196,8 @@ MonoBehaviour:
         guid: 1477add2e5807e46b42f94058428b080
       Path: Events\Default Work Unit\StarExplode
       maxAttenuation: 0
-      maxDuration: 0.91945577
-      minDuration: 0.6153288
+      maxDuration: 5.4857144
+      minDuration: 5.4857144
     - name: StarPhaseChange
       guid: 5acaba18d40f5d4d990c2e1165232c75
       id: 1418403486
@@ -196,8 +213,8 @@ MonoBehaviour:
         guid: 5acaba18d40f5d4d990c2e1165232c75
       Path: Events\Default Work Unit\StarPhaseChange
       maxAttenuation: 0
-      maxDuration: 0.91945577
-      minDuration: 0.6153288
+      maxDuration: 3.1869388
+      minDuration: 3.1869388
     - name: StartMusique
       guid: 0e991b764495a742bbe2f2fb5caa4b29
       id: 585387800
@@ -271,9 +288,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584831616952931705
     List: []
-  ExpandedFileSystemItemIds: 02000000030000000e0000000f000000
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 0200000003000000050000000600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

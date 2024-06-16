@@ -50,9 +50,13 @@ public class Star : MonoBehaviour
     [SerializeField]
     private AK.Wwise.Event _absorbSound;
     [SerializeField]
+    private AK.Wwise.Event _ZBOUI;
+    [SerializeField]
     private AK.Wwise.Event _phaseChangeSound;
     [SerializeField]
     private AK.Wwise.Event _explodeSound;
+    [SerializeField]
+    private AK.Wwise.Event _ZBOUII;
 
     private void Awake()
     {
@@ -76,6 +80,7 @@ public class Star : MonoBehaviour
         {
             if (absorbable.TryGetComponent(out PlayerMovement _))
             {
+                _ZBOUI.Post(gameObject);
                 OnPlayerEaten?.Invoke();
             }
             AbsorbObject(absorbable);
@@ -147,7 +152,7 @@ public class Star : MonoBehaviour
                 OnStarExploded?.Invoke(GetMostEatenTag());
                 return;
             }
-
+            _ZBOUII.Post(gameObject);
             UpdatePhase();
         }
     }

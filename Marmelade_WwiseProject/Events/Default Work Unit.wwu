@@ -5,10 +5,10 @@
 			<ChildrenList>
 				<Event Name="StarAbsorb" ID="{BA8D330E-A639-4FE0-8853-16C395617973}">
 					<ChildrenList>
-						<Action Name="" ID="{438C7A3F-BB3D-4676-B829-FECC854B369A}" ShortID="918359099">
+						<Action Name="" ID="{8363F46B-7531-44B1-92C2-CC24F3B419C1}" ShortID="623029578">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TestSound" ID="{8DC770F9-9189-4CBE-A86B-5981C8856DC0}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
+									<ObjectRef Name="Star_aspire" ID="{8B09AD43-340E-4A65-BD0D-A3874F25E653}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -16,10 +16,17 @@
 				</Event>
 				<Event Name="StarPhaseChange" ID="{18BACA5A-0FD4-4D5D-990C-2E1165232C75}">
 					<ChildrenList>
-						<Action Name="" ID="{B6B935A9-F3F2-44C6-99D7-73A7E72E25DE}" ShortID="436781303">
+						<Action Name="" ID="{88A4DCF3-B2EA-4941-A4C9-001BD2A83BC6}" ShortID="449589322">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TestSound" ID="{8DC770F9-9189-4CBE-A86B-5981C8856DC0}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
+									<ObjectRef Name="StarSpeak" ID="{24624725-ECF6-420E-B118-5966736538E0}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{22813552-A23F-4A26-B029-6DA044EEEA9F}" ShortID="715773335">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Star_powerup" ID="{F8AF62E1-7D06-4DE5-AF43-29D41E4A3099}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -27,10 +34,10 @@
 				</Event>
 				<Event Name="StarExplode" ID="{D2AD7714-80E5-467E-B42F-94058428B080}">
 					<ChildrenList>
-						<Action Name="" ID="{1A21AB5D-CA55-4222-A9DA-C5485370B8AE}" ShortID="633762070">
+						<Action Name="" ID="{8E2385FF-30F8-43D1-9D42-E8046BAC8521}" ShortID="694164137">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TestSound" ID="{8DC770F9-9189-4CBE-A86B-5981C8856DC0}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
+									<ObjectRef Name="Star_finalState" ID="{2DE9DF60-F1CA-46D1-ABD2-893AC7737003}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -38,10 +45,10 @@
 				</Event>
 				<Event Name="PlayerGrab" ID="{D9F97F6C-A619-4277-A266-4226B4A33251}">
 					<ChildrenList>
-						<Action Name="" ID="{C2E61257-155D-4A4F-B9EC-BB795CAB9326}" ShortID="1067567162">
+						<Action Name="" ID="{B3844CB0-3B5A-4FAC-99C9-4C6DEE80D7B8}" ShortID="296833475">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TestSound" ID="{8DC770F9-9189-4CBE-A86B-5981C8856DC0}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
+									<ObjectRef Name="Player_grab" ID="{F0E2B18F-068C-4096-9208-FBC3DC22A742}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -49,10 +56,10 @@
 				</Event>
 				<Event Name="PlayerThrow" ID="{A65D01B3-F4D1-48C7-91F1-6E95422660F4}">
 					<ChildrenList>
-						<Action Name="" ID="{D87BDCAB-3799-488A-B596-5A9069232F3E}" ShortID="567990927">
+						<Action Name="" ID="{FA92C522-E84E-4714-B310-6E9EF17B6026}" ShortID="1055895012">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TestSound" ID="{8DC770F9-9189-4CBE-A86B-5981C8856DC0}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
+									<ObjectRef Name="Player_throw" ID="{5448DFB4-B557-436C-88F2-20C81D956E0A}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -60,10 +67,10 @@
 				</Event>
 				<Event Name="PlayerBump" ID="{2C05F18B-B3A5-40EC-8061-254949BA46F3}">
 					<ChildrenList>
-						<Action Name="" ID="{AD6059A4-6F6B-4613-887C-8961910300A8}" ShortID="252797186">
+						<Action Name="" ID="{45A22EB9-2F1C-4FC6-8B09-11FF84489DC2}" ShortID="634285159">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TestSound" ID="{8DC770F9-9189-4CBE-A86B-5981C8856DC0}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
+									<ObjectRef Name="Player_Push" ID="{E0535997-0077-4268-BA63-B7276C47C3D7}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -80,7 +87,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="PlayerAbsorbed" ID="{3DC04CCA-B37E-431F-A54A-EEC4D3B4CC36}"/>
+				<Event Name="PlayerAbsorbed" ID="{3DC04CCA-B37E-431F-A54A-EEC4D3B4CC36}">
+					<ChildrenList>
+						<Action Name="" ID="{FE4E7105-4F9F-4215-84E7-C96442CF15D8}" ShortID="403550142">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Death" ID="{0620A631-92B4-401B-8782-08566AF6ECE7}" WorkUnitID="{8A04282C-CB28-4996-ADED-ACDAA9D6EE59}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
