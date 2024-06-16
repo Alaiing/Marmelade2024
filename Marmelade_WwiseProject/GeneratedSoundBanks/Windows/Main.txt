@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	294632988	PlayerGrab			\Default Work Unit\PlayerGrab	
+	585387800	StartMusique			\Default Work Unit\StartMusique	
+	698939420	StarExplode			\Default Work Unit\StarExplode	
+	1227140570	PlayerThrow			\Default Work Unit\PlayerThrow	
+	1348050238	StarAbsorb			\Default Work Unit\StarAbsorb	
+	1418403486	StarPhaseChange			\Default Work Unit\StarPhaseChange	
+	1971208426	PlayerBump			\Default Work Unit\PlayerBump	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	185082679	zboui	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\zboui_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestSound\zboui		81192
+	385189998	Marmeloche_ingame	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Marmeloche_ingame_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main\Marmeloche_ingame		4233696
+	901543470	plouf	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\plouf_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestSound\plouf		54368
+

@@ -1,6 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{18B9A62D-8C48-4DC7-AC8F-8EB41CE445E5}" SchemaVersion="119">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{18B9A62D-8C48-4DC7-AC8F-8EB41CE445E5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{18B9A62D-8C48-4DC7-AC8F-8EB41CE445E5}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="Music" ID="{0EAFF496-D1EF-478B-A6C4-DD54CA042364}" ShortID="478886430">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-16</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C418481-3809-4766-9AC8-7AC33603D585}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F5B9B946-24EF-405A-BA0F-0BF45723BB49}"/>
+						</Reference>
+						<Reference Name="PlaylistRoot">
+							<Custom>
+								<MusicPlaylistItem Name="" ID="{ABA17E28-47FD-49E4-A45D-A266B51C6E6B}" ShortID="734367163">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{34A85E1F-3CC9-4B8A-B22B-1C95ACA645D2}" ShortID="930854535">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="Main" ID="{9A7126B0-C178-4221-AFEF-5E515DA56120}" WorkUnitID="{18B9A62D-8C48-4DC7-AC8F-8EB41CE445E5}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Custom>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{18ABB29D-7018-4F67-910D-72C3743BA715}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{22D0916E-F6E8-4E71-9742-39A299A8E850}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Main" ID="{9A7126B0-C178-4221-AFEF-5E515DA56120}" ShortID="747231802">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="24770.1778385773"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C418481-3809-4766-9AC8-7AC33603D585}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F5B9B946-24EF-405A-BA0F-0BF45723BB49}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Marmeloche_ingame" ID="{CA22D80B-A32F-40C8-B869-E7C0B4ADEC04}" ShortID="719473812">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F5B9B946-24EF-405A-BA0F-0BF45723BB49}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{14606349-39FA-4103-AC52-52CEECF07865}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Marmeloche_ingame" ID="{E9D49433-7ACC-4FC5-99CB-80AC45FC30C1}">
+											<Language>SFX</Language>
+											<AudioFile>Marmeloche_ingame.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="385189998"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9D034B6B-4735-4267-86B2-207CEC5E6FEB}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Marmeloche_ingame" ID="{3FEB9371-DE2D-44CF-809D-2467E94194D5}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Marmeloche_ingame" ID="{E9D49433-7ACC-4FC5-99CB-80AC45FC30C1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{7EA0783F-74F9-4E21-B35A-C68CA4CD66EF}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{59ACEC8F-EC8E-4AF7-9108-08D6E3ED9230}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="24015.047879617"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

@@ -12,7 +12,7 @@
 	<Settings>
 		<AutoSoundBankDefinition>false</AutoSoundBankDefinition>
 		<CopyLooseStreamedMediaFiles>true</CopyLooseStreamedMediaFiles>
-		<SubFoldersForGeneratedFiles>false</SubFoldersForGeneratedFiles>
+		<SubFoldersForGeneratedFiles>true</SubFoldersForGeneratedFiles>
 		<RemoveUnusedGeneratedFiles>true</RemoveUnusedGeneratedFiles>
 		<SourceControlGeneratedFiles>false</SourceControlGeneratedFiles>
 		<GenerateHeaderFile>false</GenerateHeaderFile>
@@ -28,5 +28,5 @@
 		<PrintObjectGuid>false</PrintObjectGuid>
 		<PrintObjectPath>false</PrintObjectPath>
 	</Settings>
-	<FileHash>{A7BFA936-6A92-6DAF-4509-901C3200F601}</FileHash>
+	<FileHash>{11FC9E82-4E75-DE88-165C-AE8D990F0E2C}</FileHash>
 </PlatformInfo>

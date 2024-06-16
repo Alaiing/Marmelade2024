@@ -22,10 +22,67 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{3B51E889-948F-7EDA-A1E8-111109B087A1}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{269AB563-7ECE-7F80-0685-BC54ADF13FFE}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="185082679" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>zboui.wav</ShortName>
+					<CachePath>SFX/zboui_818F3B66.wem</CachePath>
+				</File>
+				<File Id="385189998" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Marmeloche_ingame.wav</ShortName>
+					<CachePath>SFX/Marmeloche_ingame_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="901543470" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>plouf.wav</ShortName>
+					<CachePath>SFX/plouf_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1971208426" Name="PlayerBump" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+					<MediaRefs>
+						<MediaRef Id="185082679"/>
+						<MediaRef Id="901543470"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="294632988" Name="PlayerGrab" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+					<MediaRefs>
+						<MediaRef Id="185082679"/>
+						<MediaRef Id="901543470"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1227140570" Name="PlayerThrow" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+					<MediaRefs>
+						<MediaRef Id="185082679"/>
+						<MediaRef Id="901543470"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1348050238" Name="StarAbsorb" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+					<MediaRefs>
+						<MediaRef Id="185082679"/>
+						<MediaRef Id="901543470"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="698939420" Name="StarExplode" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+					<MediaRefs>
+						<MediaRef Id="185082679"/>
+						<MediaRef Id="901543470"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1418403486" Name="StarPhaseChange" DurationType="OneShot" DurationMin="0.6153288" DurationMax="0.91945577">
+					<MediaRefs>
+						<MediaRef Id="185082679"/>
+						<MediaRef Id="901543470"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="585387800" Name="StartMusique" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="385189998"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{99E4B9EB-A789-D5B0-2148-25A8B5E13BCD}</FileHash>
+	<FileHash>{25ABF295-82E6-4DA1-E988-A92351585F1A}</FileHash>
 </SoundBanksInfo>

@@ -47,6 +47,12 @@ public class Star : MonoBehaviour
 
     private GameData.StarData CurrentData => GameData.DATA.StarDatas[_currentPhase];
 
+    [SerializeField]
+    private AK.Wwise.Event _absorbSound;
+    [SerializeField]
+    private AK.Wwise.Event _phaseChangeSound;
+    [SerializeField]
+    private AK.Wwise.Event _explodeSound;
 
     private void Awake()
     {
@@ -107,7 +113,7 @@ public class Star : MonoBehaviour
     private void Pulsate()
     {
         Bump();
-        foreach(Absorbable absorbable in Absorbable.Absorbables)
+        foreach (Absorbable absorbable in Absorbable.Absorbables)
         {
             Vector3 attractionDistance = (_transform.position - absorbable.transform.position).normalized * Mathf.Lerp(GameData.DATA.MinAttractionDistance, GameData.DATA.MaxAttractionDistance, absorbable.AttractionAmount) * CurrentData.Gravity;
             absorbable.MoveBy(attractionDistance, _moveDuration, _moveDelay);
@@ -130,11 +136,14 @@ public class Star : MonoBehaviour
         _absorbedAmount += absorbable.AbsorptionAmount;
         absorbedTags[absorbable.ObjectTag]++;
         _animator.SetTrigger("Hit");
+        _absorbSound.Post(absorbable.gameObject);
         if (_absorbedAmount > CurrentData.Threshold)
         {
             _currentPhase++;
+            _phaseChangeSound.Post(gameObject);
             if (_currentPhase > GameData.DATA.StarDatas.Length)
             {
+                _explodeSound.Post(gameObject);
                 OnStarExploded?.Invoke(GetMostEatenTag());
                 return;
             }

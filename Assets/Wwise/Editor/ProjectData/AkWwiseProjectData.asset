@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 3ea2c87d88606a4eba15e848b585ef8f
     GuidInternal: 
-    m_lastTime: -8584830812733450529
+    m_lastTime: -8584831616952926486
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 46b9b9f5ef245a40ba0f0bf45723bb49
     GuidInternal: 
-    m_lastTime: -8584830812745195452
+    m_lastTime: -8584831616952983684
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: af8fe0767ae2544c848daf9b16496a8e
     GuidInternal: 
-    m_lastTime: -8584830812740477196
-    List: []
+    m_lastTime: -8584830590262901126
+    List:
+    - name: Main
+      guid: d16d360327c730469bafaf5174a5ce21
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af8fe0767ae2544c848daf9b16496a8e
+      - ElementName: Main
+        ObjectType: 7
+        guid: d16d360327c730469bafaf5174a5ce21
+      Path: SoundBanks\Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,127 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fcbef31f0a119040baf7307d1af4d464
     GuidInternal: 
-    m_lastTime: -8584830812756563638
-    List: []
+    m_lastTime: -8584830590399696878
+    List:
+    - name: PlayerBump
+      guid: 8bf1052ca5b3ec408061254949ba46f3
+      id: 1971208426
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fcbef31f0a119040baf7307d1af4d464
+      - ElementName: PlayerBump
+        ObjectType: 3
+        guid: 8bf1052ca5b3ec408061254949ba46f3
+      Path: Events\Default Work Unit\PlayerBump
+      maxAttenuation: 0
+      maxDuration: 0.91945577
+      minDuration: 0.6153288
+    - name: PlayerGrab
+      guid: 6c7ff9d919a67742a2664226b4a33251
+      id: 294632988
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fcbef31f0a119040baf7307d1af4d464
+      - ElementName: PlayerGrab
+        ObjectType: 3
+        guid: 6c7ff9d919a67742a2664226b4a33251
+      Path: Events\Default Work Unit\PlayerGrab
+      maxAttenuation: 0
+      maxDuration: 0.91945577
+      minDuration: 0.6153288
+    - name: PlayerThrow
+      guid: b3015da6d1f4c74891f16e95422660f4
+      id: 1227140570
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fcbef31f0a119040baf7307d1af4d464
+      - ElementName: PlayerThrow
+        ObjectType: 3
+        guid: b3015da6d1f4c74891f16e95422660f4
+      Path: Events\Default Work Unit\PlayerThrow
+      maxAttenuation: 0
+      maxDuration: 0.91945577
+      minDuration: 0.6153288
+    - name: StarAbsorb
+      guid: 0e338dba39a6e04f885316c395617973
+      id: 1348050238
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fcbef31f0a119040baf7307d1af4d464
+      - ElementName: StarAbsorb
+        ObjectType: 3
+        guid: 0e338dba39a6e04f885316c395617973
+      Path: Events\Default Work Unit\StarAbsorb
+      maxAttenuation: 0
+      maxDuration: 0.91945577
+      minDuration: 0.6153288
+    - name: StarExplode
+      guid: 1477add2e5807e46b42f94058428b080
+      id: 698939420
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fcbef31f0a119040baf7307d1af4d464
+      - ElementName: StarExplode
+        ObjectType: 3
+        guid: 1477add2e5807e46b42f94058428b080
+      Path: Events\Default Work Unit\StarExplode
+      maxAttenuation: 0
+      maxDuration: 0.91945577
+      minDuration: 0.6153288
+    - name: StarPhaseChange
+      guid: 5acaba18d40f5d4d990c2e1165232c75
+      id: 1418403486
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fcbef31f0a119040baf7307d1af4d464
+      - ElementName: StarPhaseChange
+        ObjectType: 3
+        guid: 5acaba18d40f5d4d990c2e1165232c75
+      Path: Events\Default Work Unit\StarPhaseChange
+      maxAttenuation: 0
+      maxDuration: 0.91945577
+      minDuration: 0.6153288
+    - name: StartMusique
+      guid: 0e991b764495a742bbe2f2fb5caa4b29
+      id: 585387800
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fcbef31f0a119040baf7307d1af4d464
+      - ElementName: StartMusique
+        ObjectType: 3
+        guid: 0e991b764495a742bbe2f2fb5caa4b29
+      Path: Events\Default Work Unit\StartMusique
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +227,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: dfdea1aaa42e984aa596765ada16cc61
     GuidInternal: 
-    m_lastTime: -8584830812755790147
+    m_lastTime: -8584831616953065439
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,7 +241,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 757e9d71c0f4444bbf9ca58312ebfca5
     GuidInternal: 
-    m_lastTime: -8584830812736294939
+    m_lastTime: -8584831616952942192
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +255,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5f46939548ea3d4185c3abace35e0f56
     GuidInternal: 
-    m_lastTime: -8584830812735463547
+    m_lastTime: -8584831616952936859
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -136,11 +269,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: ab0d6d945284ba41808a81a27c76e8f9
     GuidInternal: 
-    m_lastTime: -8584830812734801017
+    m_lastTime: -8584831616952931705
     List: []
-  ExpandedFileSystemItemIds: 
+  ExpandedFileSystemItemIds: 02000000030000000e0000000f000000
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

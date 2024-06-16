@@ -180,6 +180,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   grabTransform: {fileID: 8640709473984429148}
+  _grabSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7f7f8238c994caa479bbaebd5b94fedc, type: 2}
+  _throwSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 05bd11a4e3f307b4d9217f6513232767, type: 2}
+  _collideSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 691748d68e5e75f40a0718b7a1937b30, type: 2}
 --- !u!114 &862116245089291370
 MonoBehaviour:
   m_ObjectHideFlags: 0

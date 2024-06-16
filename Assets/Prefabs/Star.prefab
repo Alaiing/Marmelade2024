@@ -487,6 +487,14 @@ MonoBehaviour:
   - {fileID: 5811306282686715336}
   - {fileID: 954693375041778888}
   - {fileID: 6226624791802463364}
+  _absorbSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b27a0de7ef208f648b1f4f86c38d877e, type: 2}
+  _phaseChangeSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b1530b1d439fe2f4b865f7d01104286d, type: 2}
 --- !u!58 &3485599420814725605
 CircleCollider2D:
   m_ObjectHideFlags: 0
