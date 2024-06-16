@@ -3,6 +3,7 @@ using Sirenix.OdinInspector;
 using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CircleCollider2D))]
@@ -71,6 +72,15 @@ public class Star : MonoBehaviour
         _pulsationTimer = 0;
         _absorbedAmount = 0;
         absorbedTags = new int[GameData.DATA.objectTags.Length];
+
+        OnStarExploded += GoEnding;
+    }
+
+    private void GoEnding(int tag) {
+        if(tag == 1) SceneManager.LoadScene("End1", LoadSceneMode.Single);
+        if(tag == 2) SceneManager.LoadScene("End2", LoadSceneMode.Single);
+        if(tag == 3) SceneManager.LoadScene("End3", LoadSceneMode.Single);
+        if(tag == 4) SceneManager.LoadScene("End4", LoadSceneMode.Single);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
