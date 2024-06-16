@@ -35,7 +35,13 @@ public class GameData : ScriptableObject
     public float MinAttractionDistance;
     public float MaxAttractionDistance;
 
-    public string[] objectTags;
+    [System.Serializable]
+    public struct TagInfo
+    {
+        public string name;
+        public Color color;
+    }
+    public TagInfo[] objectTags;
     public ObjectData[] objects;
 
 #if UNITY_EDITOR
