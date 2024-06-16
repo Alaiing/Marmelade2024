@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,6 +22,9 @@ public class Absorbable : MonoBehaviour
     public int AbsorptionAmount => _data.AbsorbAmount;
 
     private Rigidbody2D _body;
+    public Rigidbody2D Body => _body;
+    [SerializeField]
+    private DOTweenAnimation _highlightAnimation;
 
     private void Awake()
     {
@@ -72,6 +76,20 @@ public class Absorbable : MonoBehaviour
         }
 
         _body.MovePosition(endPosition);
+    }
+
+    public void Highlight(bool highlight)
+    {
+        if (highlight)
+        {
+            _highlightAnimation.DORewind();
+            _highlightAnimation.DOPlay();
+        }
+        else
+        {
+            _highlightAnimation.DOPause();
+            _highlightAnimation.DORewind();
+        }
     }
 
 #if UNITY_EDITOR

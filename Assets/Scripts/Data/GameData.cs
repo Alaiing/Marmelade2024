@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 [CreateAssetMenu(fileName = "GameData", menuName = "Marmelade/Game Data")]
 public class GameData : ScriptableObject
@@ -35,4 +37,22 @@ public class GameData : ScriptableObject
 
     public string[] objectTags;
     public ObjectData[] objects;
+
+#if UNITY_EDITOR
+    [Button]
+    public void UpdateObjectList()
+    {
+        List<ObjectData> list = new();
+        string[] assets = UnityEditor.AssetDatabase.FindAssets("t:ObjectData");
+        foreach (string asset in assets)
+        {
+            ObjectData objectData = UnityEditor.AssetDatabase.LoadAssetAtPath<ObjectData>(UnityEditor.AssetDatabase.GUIDToAssetPath(asset));
+            if (objectData != null && objectData.name != "Player")
+            {
+                list.Add(objectData);
+            }
+        }
+        objects = list.ToArray();
+    }
+#endif
 }
