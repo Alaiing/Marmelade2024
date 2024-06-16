@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A7FF4DA9-4860-C7D4-EFA9-7969BFA5FE68}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BB1BE218-7B07-DA9A-EF2C-0B79044A36CE}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -46,6 +46,10 @@
 					<ShortName>Marmeloche_ingame.wav</ShortName>
 					<CachePath>SFX/Marmeloche_ingame_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="391691092" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Death.wav</ShortName>
+					<CachePath>SFX/Player_Death_818F3B66.wem</CachePath>
+				</File>
 				<File Id="742054524" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_grab.wav</ShortName>
 					<CachePath>SFX/Player_grab_818F3B66.wem</CachePath>
@@ -68,6 +72,11 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="341220890" Name="PlayerAbsorbed" DurationType="OneShot" DurationMin="1.6718367" DurationMax="1.6718367">
+					<MediaRefs>
+						<MediaRef Id="391691092"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1971208426" Name="PlayerBump" DurationType="OneShot" DurationMin="1.0710204" DurationMax="1.0710204">
 					<MediaRefs>
 						<MediaRef Id="847107667"/>
@@ -109,5 +118,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7C4FE3F1-F4D1-991B-384D-A4D046D0461C}</FileHash>
+	<FileHash>{120443CC-C081-ECCE-5BC4-E469CB827545}</FileHash>
 </SoundBanksInfo>

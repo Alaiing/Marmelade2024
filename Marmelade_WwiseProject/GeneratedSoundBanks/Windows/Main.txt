@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	294632988	PlayerGrab			\Default Work Unit\PlayerGrab	
+	341220890	PlayerAbsorbed			\Default Work Unit\PlayerAbsorbed	
 	585387800	StartMusique			\Default Work Unit\StartMusique	
 	698939420	StarExplode			\Default Work Unit\StarExplode	
 	1227140570	PlayerThrow			\Default Work Unit\PlayerThrow	
@@ -13,6 +14,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	216942229	Star_powerup	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Star_powerup_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Star_powerup		562272
 	369244996	Star_finalState	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Star_finalState_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Star_finalState		967776
 	385189998	Marmeloche_ingame	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Marmeloche_ingame_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main\Marmeloche_ingame		4233696
+	391691092	Player_Death	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Player_Death_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Death		295008
 	742054524	Player_grab	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Player_grab_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_grab		129120
 	767209418	Star_voice2	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Star_voice2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\StarSpeak\Star_voice2		364128
 	847107667	Player_Push	C:\Users\User\Documents\Projects\La Marmelade 2024\Marmelade\Marmelade_WwiseProject\.cache\Windows\SFX\Player_Push_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Push		189024
