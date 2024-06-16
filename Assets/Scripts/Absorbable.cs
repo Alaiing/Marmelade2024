@@ -38,7 +38,7 @@ public class Absorbable : MonoBehaviour
     private void Awake()
     {
         _body = GetComponent<Rigidbody2D>();
-        _collider = GetComponent<Collider2D>();
+        _collider = GetComponentInChildren<Collider2D>();
         _trailRenderer = GetComponentInChildren<TrailRenderer>();
         _faceCamera = GetComponentInChildren<FaceCamera>();
         UpdateData();
