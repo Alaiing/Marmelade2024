@@ -1,0 +1,35 @@
+.title-font {
+    -unity-font: url("project://database/Assets/UI/Fonts/LilitaOne-Regular.ttf?fileID=12800000&guid=d53690ea208655b4a81f2374ea873a77&type=3#LilitaOne-Regular");
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/LilitaOne-Regular%20SDF%201.asset?fileID=11400000&guid=6545bfe0c40f2984d8dbcc948e64cab9&type=2#LilitaOne-Regular SDF 1");
+    margin-bottom: 0;
+}
+
+.button {
+    background-color: rgb(228, 218, 193);
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    -unity-font: url("project://database/Assets/UI/Fonts/LilitaOne-Regular.ttf?fileID=12800000&guid=d53690ea208655b4a81f2374ea873a77&type=3#LilitaOne-Regular");
+    -unity-font-style: normal;
+    font-size: 24px;
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/LilitaOne-Regular%20SDF%201.asset?fileID=11400000&guid=6545bfe0c40f2984d8dbcc948e64cab9&type=2#LilitaOne-Regular SDF 1");
+}
+
+.menu-button {
+    margin-bottom: 40px;
+}
+
+.text-font {
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/CenturyGothic%20SDF.asset?fileID=11400000&guid=1fe4f2bca216f5141804f2f22ce72518&type=2#CenturyGothic SDF");
+    -unity-font: url("project://database/Assets/UI/Fonts/CenturyGothic.ttf?fileID=12800000&guid=7a1fe0ecf57691345953c8dc0a259fa3&type=3#CenturyGothic");
+    -unity-font-style: bold;
+}

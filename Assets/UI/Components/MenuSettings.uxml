@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Global.uss?fileID=7433441132597879392&amp;guid=a6c94883fe18e5345b86f3b9db57b180&amp;type=3#Global" />
+    <ui:VisualElement style="flex-grow: 0; background-color: rgb(228, 218, 193); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 4px; border-right-width: 4px; border-bottom-width: 4px; border-left-width: 4px; border-top-left-radius: 35px; border-top-right-radius: 35px; border-bottom-right-radius: 35px; border-bottom-left-radius: 35px; padding-top: 20px; padding-right: 40px; padding-bottom: 20px; padding-left: 40px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; width: 50%; height: 400px; align-self: center; justify-content: center; top: 50%; translate: 0 -50%;">
+        <ui:Label text="Settings" name="Title" class="title-font" style="-unity-text-align: upper-center; font-size: 40px; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        <ui:VisualElement name="Settings" style="flex-grow: 1;">
+            <ui:VisualElement name="SoundSettings" style="flex-grow: 0;">
+                <ui:Label tabindex="-1" text="Sound" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title-font" style="font-size: 24px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                <ui:Slider label="General" high-value="100" class="text-font" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 20px; padding-left: 20px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button text="Fermer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonClose" class="button" style="background-color: rgb(221, 235, 244);" />
+    </ui:VisualElement>
+</ui:UXML>

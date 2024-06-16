@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Global.uss?fileID=7433441132597879392&amp;guid=a6c94883fe18e5345b86f3b9db57b180&amp;type=3#Global" />
+    <ui:VisualElement name="BG" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Textures/background.png?fileID=2800000&amp;guid=c3649e69987f20840b71ba65926f4b47&amp;type=3#background&quot;);">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="Menu" style="flex-grow: 0.4; padding-left: 50px;">
+                <ui:VisualElement name="Logo" style="flex-grow: 0; margin-top: 150px;">
+                    <ui:Label text="Aspirétoile" name="Titre" class="title-font" style="font-size: 60px; -unity-font-style: normal; -unity-text-align: upper-center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-text-outline-color: rgba(221, 235, 244, 0); -unity-text-outline-width: 0; text-shadow: 0 0 20px rgb(221, 235, 244);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Buttons" style="flex-grow: 1; padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px;">
+                    <ui:Button text="Jouer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonPlay" class="button menu-button" />
+                    <ui:Button text="Paramètres" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonSettings" class="button menu-button" />
+                    <ui:Button text="Quitter" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonQuit" class="button menu-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Visuel" style="flex-grow: 1; padding-top: 200px; padding-right: 100px; padding-bottom: 200px; padding-left: 50px;">
+                <ui:VisualElement name="Image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Textures/jef.png?fileID=2800000&amp;guid=90abcb52482969940a4644cc1b161e1f&amp;type=3#jef&quot;); -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Settings" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; justify-content: center; align-items: center; display: none;">
+        <ui:VisualElement style="flex-grow: 0; min-width: 500px; padding-top: 20px; padding-right: 40px; padding-bottom: 20px; padding-left: 40px; background-color: rgb(228, 218, 193); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 4px; border-right-width: 4px; border-bottom-width: 4px; border-left-width: 4px; border-top-left-radius: 35px; border-top-right-radius: 35px; border-bottom-right-radius: 35px; border-bottom-left-radius: 35px;">
+            <ui:Label tabindex="-1" text="Paramètres" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title-font" style="font-size: 40px; -unity-text-align: upper-center; margin-bottom: 20px;" />
+            <ui:VisualElement name="SettingsList" style="flex-grow: 1; margin-bottom: 40px;">
+                <ui:Label tabindex="-1" text="Son" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title-font" style="font-size: 24px;" />
+                <ui:Slider label="Général" high-value="100" class="title-font" style="padding-right: 20px; padding-left: 20px;" />
+            </ui:VisualElement>
+            <ui:Button text="Fermer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonSettingsClose" class="button" style="background-color: rgb(221, 235, 244);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
