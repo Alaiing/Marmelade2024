@@ -1,23 +1,24 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Global.uss?fileID=7433441132597879392&amp;guid=a6c94883fe18e5345b86f3b9db57b180&amp;type=3#Global" />
     <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonMenu" class="button" style="position: absolute; width: 40px; height: 40px; top: 18px; left: 15px; -unity-background-scale-mode: scale-to-fit; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
-        <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Textures/settings.png?fileID=2800000&amp;guid=0321ddd3e97e2d5449bed0274dddf814&amp;type=3#settings&quot;); -unity-background-scale-mode: scale-to-fit;" />
+        <ui:VisualElement focusable="true" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Textures/settings.png?fileID=2800000&amp;guid=0321ddd3e97e2d5449bed0274dddf814&amp;type=3#settings&quot;); -unity-background-scale-mode: scale-to-fit;" />
     </ui:Button>
     <ui:VisualElement name="Header" style="flex-grow: 0; position: absolute; left: 0; top: 18px; flex-shrink: 0; width: 100%; height: 40px; justify-content: center; align-items: center; align-self: center; flex-direction: row; flex-wrap: nowrap;">
         <ui:ProgressBar value="22" title="my-progress" name="progressStar" style="translate: 0 0; font-size: 0; align-self: auto; align-items: auto; justify-content: flex-start; width: 30%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 4px; border-right-width: 4px; border-bottom-width: 4px; border-left-width: 4px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;" />
     </ui:VisualElement>
     <ui:VisualElement name="Menu" class="popup-container" style="flex-grow: 1; display: none;">
         <ui:VisualElement class="popup-window" style="flex-grow: 0;">
-            <ui:Button text="Paramètres" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />
-            <ui:Button text="Retour menu du jeu" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />
-            <ui:Button text="Quitter le jeu" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />
-            <ui:Button text="Fermer" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" style="margin-top: 40px; background-color: rgb(221, 235, 244);" />
+            <ui:Button text="Retour menu du jeu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonGoMain" class="button" />
+            <ui:Button text="Quitter le jeu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonQuit" class="button" />
+            <ui:Button text="Fermer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonMenuClose" class="button" style="margin-top: 40px; background-color: rgb(221, 235, 244);" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="GameOver" class="popup-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.46); display: flex;">
+    <ui:VisualElement name="GameOver" class="popup-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.46); display: none;">
         <ui:VisualElement class="popup-window" style="flex-grow: 0;">
-            <ui:Label tabindex="-1" text="Game Over !" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title-font" style="font-size: 60px; margin-bottom: 40px; -unity-text-align: upper-center;" />
-            <ui:Button text="Rejouer" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" style="background-color: rgb(221, 235, 244);" />
+            <ui:Label tabindex="-1" text="Game Over !" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title-font" style="font-size: 60px; margin-bottom: 0; -unity-text-align: upper-center;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="finalTimerLabel" class="text-font" style="margin-bottom: 40px;" />
+            <ui:Button text="Rejouer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonReplay" class="button" style="background-color: rgb(221, 235, 244);" />
         </ui:VisualElement>
     </ui:VisualElement>
+    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Timer" class="title-font" style="display: flex; position: absolute; left: 15px; bottom: 13px;" />
 </ui:UXML>

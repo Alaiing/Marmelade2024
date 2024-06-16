@@ -122,7 +122,7 @@ public class Star : MonoBehaviour
 
     private int GetMostEatenTag()
     {
-        return Array.IndexOf(_absorbedTags, _absorbedTags.Max());
+        return Array.IndexOf(absorbedTags, absorbedTags.Max());
     }
 
     public void AbsorbObject(Absorbable absorbable)

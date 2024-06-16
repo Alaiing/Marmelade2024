@@ -17,7 +17,7 @@
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="Settings" class="popup-container">
+    <ui:VisualElement name="Settings" class="popup-container" style="display: none;">
         <ui:VisualElement class="popup-window">
             <ui:Label tabindex="-1" text="Paramètres" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title-font" style="font-size: 40px; -unity-text-align: upper-center; margin-bottom: 20px;" />
             <ui:VisualElement name="SettingsList" style="flex-grow: 1; margin-bottom: 40px;">
