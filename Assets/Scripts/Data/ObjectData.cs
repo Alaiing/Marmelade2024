@@ -22,8 +22,7 @@ public class ObjectData : ScriptableObject
 
         for (int i = 0; i < GameData.DATA.objectTags.Length; i++)
         {
-            string tag = GameData.DATA.objectTags[i];
-            value.Add(tag, i);
+            value.Add(GameData.DATA.objectTags[i].name, i);
         }
 
         return value;

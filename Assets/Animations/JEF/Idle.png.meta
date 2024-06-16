@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: 1aef6633cce4cdf47a4e6336c06ed40f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1003.3334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65754159a3adc5b4f8d93ee94f14294d
+      internalID: 64704939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_1
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1003.3334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7620096b682f84249a649ebc4c382717
+      internalID: 783039156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_2
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 1003.3334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffa6c58f9bb981479d2053eb7455db0
+      internalID: -457590862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 1003.3334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec530fcc32dfa0479441922f6277d07
+      internalID: -1881179851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_4
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 1003.3334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369718397ff461f4d896faa323758325
+      internalID: 1689047723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_5
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 1003.3334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bca84fcdb0e99a478def68a2ad1be34
+      internalID: -79811773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_6
+      rect:
+        serializedVersion: 2
+        x: 3468
+        y: 1003.3334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246639ce49742f0418de0a4a8beabd23
+      internalID: -1402769229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 502.33334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704f00078e7c12f4fa75dba894d5917f
+      internalID: 621898001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_8
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 502.33334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88233138f133ff64fbaf55d4d4e1d7a4
+      internalID: -726232727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_9
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 502.33334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d07af753ffd3047805c258e24e5bbb
+      internalID: -882581792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_10
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 502.33334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f6a7faef5a86349b391cdb7bcb706a
+      internalID: -1505079894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_11
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 502.33334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70396d6bfaeb8904288c540aadd7085b
+      internalID: -1808102924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_12
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 502.33334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b2b14ed429c7347b2ff341b580c11c
+      internalID: 1814445848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_13
+      rect:
+        serializedVersion: 2
+        x: 3468
+        y: 502.33334
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce566e525b89e0445b73f5a987a39918
+      internalID: 190489848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333435
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a351f241f2a9b449317643f6d1dea1
+      internalID: 1022321864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_15
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1.3333435
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03be758bc29971f44a30f15a3aa61ab2
+      internalID: 468697035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 1.3333435
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3fb2440bd674c44a253dd73554cbaf
+      internalID: 1292854375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_17
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 1.3333435
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c9622f46a0bfc4ca051f13db943824
+      internalID: -364338602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_18
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 1.3333435
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cdc700e2cc2414b94f51d4fbd5b990
+      internalID: 457675045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JEFexport_V2-Idle_19
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 1.3333435
+        width: 578
+        height: 501.66666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184aa72052f9aa348b85c9893c199c3e
+      internalID: -1588316109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      JEFexport_V2-Idle_0: 64704939
+      JEFexport_V2-Idle_1: 783039156
+      JEFexport_V2-Idle_10: -1505079894
+      JEFexport_V2-Idle_11: -1808102924
+      JEFexport_V2-Idle_12: 1814445848
+      JEFexport_V2-Idle_13: 190489848
+      JEFexport_V2-Idle_14: 1022321864
+      JEFexport_V2-Idle_15: 468697035
+      JEFexport_V2-Idle_16: 1292854375
+      JEFexport_V2-Idle_17: -364338602
+      JEFexport_V2-Idle_18: 457675045
+      JEFexport_V2-Idle_19: -1588316109
+      JEFexport_V2-Idle_2: -457590862
+      JEFexport_V2-Idle_3: -1881179851
+      JEFexport_V2-Idle_4: 1689047723
+      JEFexport_V2-Idle_5: -79811773
+      JEFexport_V2-Idle_6: -1402769229
+      JEFexport_V2-Idle_7: 621898001
+      JEFexport_V2-Idle_8: -726232727
+      JEFexport_V2-Idle_9: -882581792
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
