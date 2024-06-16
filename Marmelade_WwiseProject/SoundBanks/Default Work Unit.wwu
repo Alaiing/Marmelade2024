@@ -8,6 +8,7 @@
 						<ObjectRef Name="PlayerBump" ID="{2C05F18B-B3A5-40EC-8061-254949BA46F3}" WorkUnitID="{1FF3BEFC-110A-4090-BAF7-307D1AF4D464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerGrab" ID="{D9F97F6C-A619-4277-A266-4226B4A33251}" WorkUnitID="{1FF3BEFC-110A-4090-BAF7-307D1AF4D464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StartMusique" ID="{761B990E-9544-42A7-BBE2-F2FB5CAA4B29}" WorkUnitID="{1FF3BEFC-110A-4090-BAF7-307D1AF4D464}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerAbsorbed" ID="{3DC04CCA-B37E-431F-A54A-EEC4D3B4CC36}" WorkUnitID="{1FF3BEFC-110A-4090-BAF7-307D1AF4D464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StarExplode" ID="{D2AD7714-80E5-467E-B42F-94058428B080}" WorkUnitID="{1FF3BEFC-110A-4090-BAF7-307D1AF4D464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerThrow" ID="{A65D01B3-F4D1-48C7-91F1-6E95422660F4}" WorkUnitID="{1FF3BEFC-110A-4090-BAF7-307D1AF4D464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StarPhaseChange" ID="{18BACA5A-0FD4-4D5D-990C-2E1165232C75}" WorkUnitID="{1FF3BEFC-110A-4090-BAF7-307D1AF4D464}" Origin="Manual" Filter="7"/>

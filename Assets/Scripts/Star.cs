@@ -100,8 +100,11 @@ public class Star : MonoBehaviour
 
     private void Update()
     {
+        if (_currentPhase >= GameData.DATA.StarDatas.Length)
+            return;
+
         _pulsationTimer += Time.deltaTime;
-        if (_pulsationTimer >= CurrentData.PulsationPeriod)
+        if ( _pulsationTimer >= CurrentData.PulsationPeriod)
         {
             Pulsate();
             _pulsationTimer = 0;
@@ -156,7 +159,7 @@ public class Star : MonoBehaviour
         {
             _currentPhase++;
             _phaseChangeSound.Post(gameObject);
-            if (_currentPhase > GameData.DATA.StarDatas.Length)
+            if (_currentPhase >= GameData.DATA.StarDatas.Length)
             {
                 _explodeSound.Post(gameObject);
                 OnStarExploded?.Invoke(GetMostEatenTag());
