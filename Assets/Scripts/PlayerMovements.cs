@@ -123,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
         _grabbedAbsorbable = absorbable;
         _grabbedAbsorbable.OnGrabbed();
         _grabbedAbsorbable.transform.SetParent(grabTransform, worldPositionStays:true);
-        _grabbedAbsorbable.transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.AngleAxis(180, new Vector3(0,0,1)));
+        _grabbedAbsorbable.transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.AngleAxis(0, new Vector3(0,0,1)));
     }
 
     private void ThrowAbsorbable()
