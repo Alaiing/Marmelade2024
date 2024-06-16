@@ -133,7 +133,7 @@ public class GameScript : MonoBehaviour
 
         timerLabel.text = ((int)timer).ToString() + "s";
     
-        belgiquemeilleurequefrance.value = Star.absorbedTags[0] + Star.absorbedTags[1] + Star.absorbedTags[2] + Star.absorbedTags[3];
+        belgiquemeilleurequefrance.value = (Star.absorbedTags[0] + Star.absorbedTags[1] + Star.absorbedTags[2] + Star.absorbedTags[3]) * 100 / 60;
         int biggest = Array.IndexOf(Star.absorbedTags, Mathf.Max(Star.absorbedTags[0], Star.absorbedTags[1], Star.absorbedTags[2], Star.absorbedTags[3]));
         if(currentTag != biggest) {
             currentTag = biggest;
