@@ -1,11 +1,16 @@
 using DG.Tweening;
 using Sirenix.OdinInspector;
+using System;
+using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CircleCollider2D))]
 public class Star : MonoBehaviour
 {
+    public static event Action OnPlayerEaten;
+    public static event Action<int> OnStarExploded;
+
     [SerializeField]
     private float _startSize;
     [SerializeField]
@@ -16,7 +21,7 @@ public class Star : MonoBehaviour
     private int _absorbedAmount;
     [ShowInInspector]
     [ReadOnly]
-    private int _currentStarDataIndex;
+    private int _currentPhase;
 
     private float _pulsationTimer;
 
@@ -37,7 +42,10 @@ public class Star : MonoBehaviour
     [ReadOnly]
     static public int[] absorbedTags;
 
-    private GameData.StarData CurrentData => GameData.DATA.StarDatas[_currentStarDataIndex];
+    [SerializeField]
+    private Animator[] _phases;
+
+    private GameData.StarData CurrentData => GameData.DATA.StarDatas[_currentPhase];
 
 
     private void Awake()
@@ -48,7 +56,8 @@ public class Star : MonoBehaviour
 
     private void Start()
     {
-        _currentStarDataIndex = 0;
+        _currentPhase = 0;
+        UpdatePhase();
         _pulsationTimer = 0;
         _absorbedAmount = 0;
         absorbedTags = new int[GameData.DATA.objectTags.Length];
@@ -59,6 +68,10 @@ public class Star : MonoBehaviour
         Absorbable absorbable = collision.collider.GetComponentInParent<Absorbable>();
         if (absorbable != null)
         {
+            if (absorbable.TryGetComponent(out PlayerMovement _))
+            {
+                OnPlayerEaten?.Invoke();
+            }
             AbsorbObject(absorbable);
             Destroy(absorbable.gameObject);
         }
@@ -71,6 +84,22 @@ public class Star : MonoBehaviour
         {
             Pulsate();
             _pulsationTimer = 0;
+        }
+    }
+
+    private void UpdatePhase()
+    {
+        for (int i = 0; i < _phases.Length; i++)
+        {
+            if (i == _currentPhase)
+            {
+                _animator = _phases[i];
+                _phases[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                _phases[i].gameObject.SetActive(false);
+            }
         }
     }
 
@@ -91,6 +120,11 @@ public class Star : MonoBehaviour
         _tweenAnimation.DOPlay();
     }
 
+    private int GetMostEatenTag()
+    {
+        return Array.IndexOf(_absorbedTags, _absorbedTags.Max());
+    }
+
     public void AbsorbObject(Absorbable absorbable)
     {
         _absorbedAmount += absorbable.AbsorptionAmount;
@@ -98,8 +132,14 @@ public class Star : MonoBehaviour
         _animator.SetTrigger("Hit");
         if (_absorbedAmount > CurrentData.Threshold)
         {
-            _currentStarDataIndex++;
-            // TODO : check max possible
+            _currentPhase++;
+            if (_currentPhase > GameData.DATA.StarDatas.Length)
+            {
+                OnStarExploded?.Invoke(GetMostEatenTag());
+                return;
+            }
+
+            UpdatePhase();
         }
     }
 }
