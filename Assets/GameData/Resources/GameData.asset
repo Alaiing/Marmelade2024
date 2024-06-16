@@ -28,10 +28,14 @@ MonoBehaviour:
   MinAttractionDistance: 0.1
   MaxAttractionDistance: 1
   objectTags:
-  - White
-  - Black
-  - Violet
-  - Green
+  - name: White
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - name: Black
+    color: {r: 0, g: 0, b: 0, a: 1}
+  - name: Violet
+    color: {r: 0.44805002, g: 0, b: 1, a: 1}
+  - name: Green
+    color: {r: 0, g: 1, b: 0, a: 1}
   objects:
   - {fileID: 11400000, guid: 62d2dff782533c247a55f99ff073702c, type: 2}
   - {fileID: 11400000, guid: 9259b38cf59a4a84cb317142ad3b8cb0, type: 2}
