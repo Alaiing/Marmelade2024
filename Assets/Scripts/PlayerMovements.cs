@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerActions foxyWhiteTrack = null;
     private Vector2 moveVector = Vector2.zero;
     private Rigidbody2D rb = null;
+    [SerializeField]
     private float moveSpeed = 10f;
 
     private void Awake()

@@ -9,8 +9,8 @@ public class ObjectData : ScriptableObject
 {
     [ValueDropdown(nameof(GetTags))]
     public int tag;
-    [Range(1, 3)]
-    public int AborbAmount = 1;
+    [ValueDropdown(nameof(GetAbsorbAmount))]
+    public int AbsorbAmount = 1;
     [Range(0f, 1f)]
     public float AttractionRate;
     [PreviewField(Height = 100)]
@@ -25,6 +25,16 @@ public class ObjectData : ScriptableObject
             string tag = GameData.DATA.objectTags[i];
             value.Add(tag, i);
         }
+
+        return value;
+    }
+
+    public static IEnumerable GetAbsorbAmount()
+    {
+        ValueDropdownList<int> value = new()
+        {
+            1,2,3
+        };
 
         return value;
     }

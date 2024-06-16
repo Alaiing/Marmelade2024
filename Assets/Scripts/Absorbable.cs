@@ -18,7 +18,7 @@ public class Absorbable : MonoBehaviour
 
     private SpriteRenderer _spriteRenderer;
 
-    public int AbsorptionAmount => _data.AborbAmount;
+    public int AbsorptionAmount => _data.AbsorbAmount;
 
     private Rigidbody2D _body;
 
@@ -75,6 +75,7 @@ public class Absorbable : MonoBehaviour
     }
 
 #if UNITY_EDITOR
+    [Button("Update Collider")]
     private void OnDataChanged()
     {
         if (_data == null || _data.sprite == null)

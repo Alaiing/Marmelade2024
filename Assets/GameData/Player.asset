@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tag: 0
   AborbAmount: 1
-  AttractionRate: 0
+  AttractionRate: 0.5
   sprite: {fileID: 0}

@@ -25,8 +25,8 @@ MonoBehaviour:
   - Threshold: 300
     Gravity: 4
     PulsationPeriod: 60
-  MinAttractionDistance: 1
-  MaxAttractionDistance: 4
+  MinAttractionDistance: 0.1
+  MaxAttractionDistance: 1
   objectTags:
   - White
   - Black
