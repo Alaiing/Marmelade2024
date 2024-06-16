@@ -26,6 +26,7 @@ public class Star : MonoBehaviour
     private DOTweenAnimation _tweenAnimation;
 
     private Transform _transform;
+    private Animator _animator;
 
     [SerializeField]
     private float _moveDuration = 0.2f;
@@ -42,6 +43,7 @@ public class Star : MonoBehaviour
     private void Awake()
     {
         _transform = transform;
+        _animator = GetComponentInChildren<Animator>();
     }
 
     private void Start()
@@ -93,7 +95,7 @@ public class Star : MonoBehaviour
     {
         _absorbedAmount += absorbable.AbsorptionAmount;
         _absorbedTags[absorbable.ObjectTag]++;
-        Bump();
+        _animator.SetTrigger("Hit");
         if (_absorbedAmount > CurrentData.Threshold)
         {
             _currentStarDataIndex++;
