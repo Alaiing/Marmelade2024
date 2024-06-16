@@ -37,6 +37,19 @@ MonoBehaviour:
   - name: Green
     color: {r: 0, g: 1, b: 0, a: 1}
   objects:
+  - {fileID: 11400000, guid: f78d2c9db4a3f614bb4981b7d7946efe, type: 2}
   - {fileID: 11400000, guid: 62d2dff782533c247a55f99ff073702c, type: 2}
+  - {fileID: 11400000, guid: dcdce787d367e884a82412bc737816ae, type: 2}
+  - {fileID: 11400000, guid: dc6065e74a5287a40833323a5f1bd685, type: 2}
   - {fileID: 11400000, guid: 9259b38cf59a4a84cb317142ad3b8cb0, type: 2}
+  - {fileID: 11400000, guid: 6f939bfd41dc6d4438940eb424218134, type: 2}
+  - {fileID: 11400000, guid: 5558a68a42c00184590f8fe24aadfed7, type: 2}
+  - {fileID: 11400000, guid: 2c2a3be82540ae147a371f32e5b197a9, type: 2}
+  - {fileID: 11400000, guid: 4c47ea410c07ec445b5f0ba4096510a2, type: 2}
+  - {fileID: 11400000, guid: f3c0d9f01be8dd24d917e801e8fa3607, type: 2}
+  - {fileID: 11400000, guid: def81708fae10724ebbf18afff2cc506, type: 2}
+  - {fileID: 11400000, guid: 02d44041752a66a4a933ebee6660a41b, type: 2}
   - {fileID: 11400000, guid: b8dc083151186e54391ae51c72d04ce0, type: 2}
+  - {fileID: 11400000, guid: 856c2f033a76cfc4dad6c92d5a42bf47, type: 2}
+  - {fileID: 11400000, guid: 98e1e8354b9404c44a18d043da831f7b, type: 2}
+  - {fileID: 11400000, guid: 363704f76c3366f4a81415636caa2f84, type: 2}
