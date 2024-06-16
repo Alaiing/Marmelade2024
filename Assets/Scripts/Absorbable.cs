@@ -33,7 +33,7 @@ public class Absorbable : MonoBehaviour
     public Collider2D Collider => _collider;
 
     private TrailRenderer _trailRenderer;
-    private FaceCamera _faceCamera;
+    private FaceCamera _faceCamera; 
 
     private void Awake()
     {

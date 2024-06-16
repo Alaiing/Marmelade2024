@@ -34,7 +34,7 @@ public class Star : MonoBehaviour
 
     [ShowInInspector]
     [ReadOnly]
-    private int[] _absorbedTags;
+    static public int[] absorbedTags;
 
     private GameData.StarData CurrentData => GameData.DATA.StarDatas[_currentStarDataIndex];
 
@@ -49,7 +49,7 @@ public class Star : MonoBehaviour
         _currentStarDataIndex = 0;
         _pulsationTimer = 0;
         _absorbedAmount = 0;
-        _absorbedTags = new int[GameData.DATA.objectTags.Length];
+        absorbedTags = new int[GameData.DATA.objectTags.Length];
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -92,7 +92,7 @@ public class Star : MonoBehaviour
     public void AbsorbObject(Absorbable absorbable)
     {
         _absorbedAmount += absorbable.AbsorptionAmount;
-        _absorbedTags[absorbable.ObjectTag]++;
+        absorbedTags[absorbable.ObjectTag]++;
         Bump();
         if (_absorbedAmount > CurrentData.Threshold)
         {
