@@ -6,11 +6,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(CircleCollider2D))]
 public class Star : MonoBehaviour
 {
     public static event Action OnPlayerEaten;
-    public static event Action<int> OnStarExploded;
+    public static event Action<Star, int> OnStarExploded;
 
     [SerializeField]
     private float _startSize;
@@ -72,15 +71,6 @@ public class Star : MonoBehaviour
         _pulsationTimer = 0;
         _absorbedAmount = 0;
         absorbedTags = new int[GameData.DATA.objectTags.Length];
-
-        OnStarExploded += GoEnding;
-    }
-
-    private void GoEnding(int tag) {
-        if(tag == 1) SceneManager.LoadScene("End1", LoadSceneMode.Single);
-        if(tag == 2) SceneManager.LoadScene("End2", LoadSceneMode.Single);
-        if(tag == 3) SceneManager.LoadScene("End3", LoadSceneMode.Single);
-        if(tag == 4) SceneManager.LoadScene("End4", LoadSceneMode.Single);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -104,7 +94,7 @@ public class Star : MonoBehaviour
             return;
 
         _pulsationTimer += Time.deltaTime;
-        if ( _pulsationTimer >= CurrentData.PulsationPeriod)
+        if (_pulsationTimer >= CurrentData.PulsationPeriod)
         {
             Pulsate();
             _pulsationTimer = 0;
@@ -151,6 +141,9 @@ public class Star : MonoBehaviour
 
     public void AbsorbObject(Absorbable absorbable)
     {
+        if (_currentPhase >= GameData.DATA.StarDatas.Length)
+            return;
+
         _absorbedAmount += absorbable.AbsorptionAmount;
         absorbedTags[absorbable.ObjectTag]++;
         _animator.SetTrigger("Hit");
@@ -162,7 +155,7 @@ public class Star : MonoBehaviour
             if (_currentPhase >= GameData.DATA.StarDatas.Length)
             {
                 _explodeSound.Post(gameObject);
-                OnStarExploded?.Invoke(GetMostEatenTag());
+                OnStarExploded?.Invoke(this, GetMostEatenTag());
                 return;
             }
             _ZBOUII.Post(gameObject);

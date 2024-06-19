@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Global.uss?fileID=7433441132597879392&amp;guid=a6c94883fe18e5345b86f3b9db57b180&amp;type=3#Global" />
-    <ui:VisualElement name="BG" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Textures/background.png?fileID=2800000&amp;guid=c3649e69987f20840b71ba65926f4b47&amp;type=3#background&quot;);">
+    <ui:VisualElement name="BG" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Textures/background.jpg?fileID=2800000&amp;guid=cfe933a9f19275543affd391248c6753&amp;type=3#background&quot;);">
         <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
             <ui:VisualElement name="Menu" style="flex-grow: 0.4; padding-left: 50px;">
                 <ui:VisualElement name="Logo" style="flex-grow: 0; margin-top: 150px;">

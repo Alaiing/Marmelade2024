@@ -4,6 +4,9 @@ using UnityEngine.UIElements;
 
 public class SimpleRuntimeUI : MonoBehaviour
 {
+    [SerializeField]
+    private AK.Wwise.Event _music;
+    private static bool _musicPlaying;
     // Play button
     private Button nikos49Fr;
     // Settings button
@@ -15,6 +18,16 @@ public class SimpleRuntimeUI : MonoBehaviour
     private VisualElement settings;
     // Settings close button
     private Button settingsCloseButton;
+
+    private void Start()
+    {
+        Time.timeScale = 1.0f;
+        if (_musicPlaying)
+            return;
+
+        _musicPlaying = true;
+        _music.Post(gameObject);
+    }
 
     //Add logic that interacts with the UI controls in the `OnEnable` methods
     private void OnEnable()

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   tag: 0
-  AborbAmount: 1
-  AttractionRate: 0.5
+  AbsorbAmount: 1
+  AttractionRate: 0.25
   sprite: {fileID: 0}

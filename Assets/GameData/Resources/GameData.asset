@@ -15,16 +15,16 @@ MonoBehaviour:
   StarDatas:
   - Threshold: 25
     Gravity: 1
-    PulsationPeriod: 5
-  - Threshold: 50
-    Gravity: 2
     PulsationPeriod: 10
+  - Threshold: 50
+    Gravity: 1
+    PulsationPeriod: 8
   - Threshold: 75
-    Gravity: 3
-    PulsationPeriod: 40
+    Gravity: 1
+    PulsationPeriod: 6
   - Threshold: 100
-    Gravity: 4
-    PulsationPeriod: 60
+    Gravity: 1
+    PulsationPeriod: 4
   MinAttractionDistance: 0.1
   MaxAttractionDistance: 1
   objectTags:
